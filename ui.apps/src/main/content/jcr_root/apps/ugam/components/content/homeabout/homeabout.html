@@ -1,0 +1,17 @@
+<div data-sly-use.homeabout="com.ugam.core.models.HomeAbout"></div>
+
+<section class="home-about-area pt-120">					<!-- COMP WITH IMAGE(L) TEXT TITLE (REUSE)-->
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6 col-md-6 home-about-left">
+                <img class="img-fluid" src="${homeabout.image}" alt="">
+            </div>
+            <div class="col-lg-5 col-md-6 home-about-right">
+                <h6>${homeabout.title}</h6>
+                <h1 class="text-uppercase">${homeabout.text}</h1>
+                <p>${homeabout.description}</p>
+                <a href="#" class="primary-btn text-uppercase">${homeabout.button}</a>
+            </div>
+        </div>
+    </div>
+</section>

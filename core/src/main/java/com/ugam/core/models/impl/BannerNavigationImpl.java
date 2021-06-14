@@ -1,7 +1,7 @@
 package com.ugam.core.models.impl;
 
 
-import com.ugam.core.models.BlogTeaser;
+import com.ugam.core.models.BannerNavigation;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
@@ -9,19 +9,19 @@ import org.apache.sling.models.annotations.Model;
 import javax.inject.Inject;
 
 @Model(adaptables = Resource.class,
-        adapters = BlogTeaser.class,
+        adapters = BannerNavigation.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class BlogTeaserImpl implements BlogTeaser{
+public class BannerNavigationImpl implements BannerNavigation{
 
     @Inject
     String title;
 
     @Inject
-    String description;
+    String text;
 
     @Inject
-    String image;
+    String navText;
 
     @Override
     public String getTitle() {
@@ -29,12 +29,12 @@ public class BlogTeaserImpl implements BlogTeaser{
     }
 
     @Override
-    public String getDescription() {
-        return description;
+    public String getText() {
+        return text;
     }
 
     @Override
-    public String getImage() {
-        return image;
+    public String getNavText() {
+        return navText;
     }
 }

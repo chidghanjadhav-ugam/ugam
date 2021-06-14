@@ -1,4 +1,4 @@
-<div data-sly-use.blogteaser="com.ugam.core.models.BlogTeaser"></div>
+<sly data-sly-use.blogteaser="com.ugam.core.models.BlogTeaser"></sly>
 
 
 <section class="recent-blog-area section-gap">
@@ -6,7 +6,7 @@
         <div class="row">
             <div class="single-recent-blog col-lg-4 col-md-4">
                 <div class="thumb">
-                    <img class="f-img img-fluid mx-auto" src="${properties.fileReference}" alt="">
+                    <img class="f-img img-fluid mx-auto" src="${blogteaser.image}" alt="">
                 </div>
                 <a href="#">
                     <h4>${blogteaser.title}</h4>

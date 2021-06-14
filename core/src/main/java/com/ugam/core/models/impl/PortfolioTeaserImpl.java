@@ -1,7 +1,7 @@
 package com.ugam.core.models.impl;
 
 
-import com.ugam.core.models.BlogTeaser;
+import com.ugam.core.models.PortfolioTeaser;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
@@ -9,19 +9,16 @@ import org.apache.sling.models.annotations.Model;
 import javax.inject.Inject;
 
 @Model(adaptables = Resource.class,
-        adapters = BlogTeaser.class,
+        adapters = PortfolioTeaser.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class BlogTeaserImpl implements BlogTeaser{
+public class PortfolioTeaserImpl implements PortfolioTeaser{
 
     @Inject
     String title;
 
     @Inject
-    String description;
-
-    @Inject
-    String image;
+    String text;
 
     @Override
     public String getTitle() {
@@ -29,12 +26,7 @@ public class BlogTeaserImpl implements BlogTeaser{
     }
 
     @Override
-    public String getDescription() {
-        return description;
-    }
-
-    @Override
-    public String getImage() {
-        return image;
+    public String getText() {
+        return text;
     }
 }

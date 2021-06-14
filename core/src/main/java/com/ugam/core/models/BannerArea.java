@@ -1,7 +1,9 @@
 package com.ugam.core.models;
 
-public interface BlogTeaser {
+public interface BannerArea {
     String getTitle();
+    String getName();
     String getDescription();
+    String getButton();
     String getImage();
 }
