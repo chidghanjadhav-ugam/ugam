@@ -1,0 +1,16 @@
+<sly data-sly-use.time="com.ugam.core.models.Timeline"></sly>
+
+<section class="timeline pb-120">
+    <ul data-sly-list.item="${time.timeline}">
+        <li>
+            <div class="content">
+                <img class="img-fluid mx-auto d-block mb-30" src="" alt="">
+                <h4>
+                    <time>${item.title}</time>
+                </h4>
+                <p>${item.timePeriod}</p>
+                <p>${item.text}</p>
+            </div>
+        </li>
+    </ul>
+</section>

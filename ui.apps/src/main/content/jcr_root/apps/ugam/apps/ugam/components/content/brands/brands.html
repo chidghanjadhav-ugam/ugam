@@ -1,0 +1,14 @@
+<sly data-sly-use.brands="com.ugam.core.models.Brands"></sly>
+
+
+<section class="brands-area">
+    <div class="container">
+        <div class="brand-wrap">
+            <div class="row align-items-center active-brand-carusel justify-content-start no-gutters" data-sly-list.item="${brands.imagePath}">
+                <div class="col single-brand">
+                    <a href="#"><img class="mx-auto" src="${item}" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

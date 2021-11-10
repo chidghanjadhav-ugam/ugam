@@ -4,4 +4,5 @@ public interface BannerNavigation {
     String getTitle();
     String getText();
     String getNavText();
+    String getPath();
 }

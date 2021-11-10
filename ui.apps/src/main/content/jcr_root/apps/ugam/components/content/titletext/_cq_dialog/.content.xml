@@ -14,7 +14,7 @@
                 <items jcr:primaryType="nt:unstructured">
                     <general
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="General"
+                        jcr:title="TitleText"
                         sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
                         margin="true">
                         <items jcr:primaryType="nt:unstructured">
@@ -32,6 +32,22 @@
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                                         fieldLabel="Text"
                                         name="./text"/>
+                                    <sectionGap
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}false"
+                                        name="./sectionGap"
+                                        text="Section Gap"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <bottomPadding
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}false"
+                                        name="./bottomPadding"
+                                        text="Bottom Padding"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
                                 </items>
                             </column>
                         </items>

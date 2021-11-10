@@ -23,6 +23,9 @@ public class BannerNavigationImpl implements BannerNavigation{
     @Inject
     String navText;
 
+    @Inject
+    String path;
+
     @Override
     public String getTitle() {
         return title;
@@ -36,5 +39,10 @@ public class BannerNavigationImpl implements BannerNavigation{
     @Override
     public String getNavText() {
         return navText;
+    }
+
+    @Override
+    public String getPath() {
+        return path;
     }
 }

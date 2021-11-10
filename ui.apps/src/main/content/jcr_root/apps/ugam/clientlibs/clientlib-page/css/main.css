@@ -3163,7 +3163,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /* -------------------------
-   ----- Media Queries ----- 
+   ----- Media Queries -----
    ------------------------- */
 @media screen and (max-width: 1020px) {
   .timeline ul li .content {
@@ -4483,4 +4483,3 @@ dl.accordion.time-line:before {
 }
 
 /*-------- end footer Area -------------*/
-

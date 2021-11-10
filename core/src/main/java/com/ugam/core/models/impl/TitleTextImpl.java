@@ -24,6 +24,15 @@ public class TitleTextImpl implements TitleText {
     @Inject
     String text;
 
+    @Inject
+    boolean sectionGap;
+
+    @Inject
+    boolean bottomPadding;
+
+    @Inject
+    boolean colour;
+
     @Override
     public String getTitle() {
         return title;
@@ -32,5 +41,20 @@ public class TitleTextImpl implements TitleText {
     @Override
     public String getText() {
         return text;
+    }
+
+    @Override
+    public boolean getSectionGap() {
+        return sectionGap;
+    }
+
+    @Override
+    public boolean getBottomPadding() {
+        return bottomPadding;
+    }
+
+    @Override
+    public boolean getColour() {
+        return colour;
     }
 }
