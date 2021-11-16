@@ -18,9 +18,6 @@ class BannerAreaImplTest {
 
     @BeforeEach
     void setUp() {
-        //aemContext.load().json(BannerAreaImpl.class.getResourceAsStream ("/com/ugam/core/models/impl/Banner.json"),"/component");
-        //aemContext.load().json("/com/ugam/core/models/impl/Banner.json","/component");
-        //aemContext.addModelsForClasses(BannerAreaImpl.class);
         aemContext.load().json("/Banner.json","/content");
     }
 
@@ -33,13 +30,6 @@ class BannerAreaImplTest {
 
     @Test
     void getName() {
-//        Resource json = aemContext.resourceResolver().getResource("/content");
-//        BannerArea banner = json.adaptTo(BannerArea.class);
-        //final String expected = "AEM";
-        //String actual = banner.getName();
-//        aemContext.currentResource("/content");
-//        banner=aemContext.request().adaptTo(BannerArea.class);
-//        assertEquals("PHILIP GILBERT", banner.getName());
         Resource json = aemContext.currentResource("/content/banner");
         BannerArea banner = json.adaptTo(BannerArea.class);
         assertEquals("PHILIP GILBERT", banner.getName());
