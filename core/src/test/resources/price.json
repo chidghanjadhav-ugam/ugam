@@ -1,0 +1,16 @@
+{
+  "price": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "priceText1": "Secure Online Transfer",
+    "priceText2": "Unlimited Styles for interface",
+    "priceText3": "Reliable Customer Service",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Jun 18 2021 01:14:46 GMT+0530",
+    "text": "For the individuals",
+    "title": "Business",
+    "titleNumber": "02",
+    "jcr:lastModified": "Fri Jun 18 2021 01:15:43 GMT+0530",
+    "sling:resourceType": "ugam/components/content/price"
+  }
+}
