@@ -1,0 +1,41 @@
+{
+  "timeline": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Fri Jun 18 2021 01:33:25 GMT+0530",
+  "jcr:lastModified": "Thu Nov 11 2021 12:35:16 GMT+0530",
+  "sling:resourceType": "ugam/components/content/timeline",
+  "timelinemultifield": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "Result: 3.78 (In the Scale of 4.00)",
+      "title": "Masters in Graphics & Fine Arts",
+      "timePeriod": "Session: 2010-11"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "title": "Creative Content Developer",
+      "timePeriod": "July 2015 to Present"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "Result: 3.40 (In the Scale of 4.00)",
+      "title": "Bachelor in Graphics & UI/UX",
+      "timePeriod": "Session: 2006-09"
+    },
+    "item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "title": "Senior UI/UX Designer",
+      "timePeriod": "July 2015 to Present"
+    },
+    "item4": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "Result: 4.94 (In the Scale of 5.00)",
+      "title": "Diploma in Fine Arts & Printing",
+      "timePeriod": "Session: 2003-06"
+    }
+  }
+}
+}
