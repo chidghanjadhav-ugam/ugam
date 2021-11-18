@@ -18,11 +18,9 @@ public class AdditionServlet extends SlingAllMethodsServlet {
 
     @Override
     protected void doGet(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws IOException{
-        String first = request.getParameter("first");
-        String second = request.getParameter("second");
-        int value1 = Integer.parseInt(first);
-        int value2 = Integer.parseInt(second);
-        int answer = value1+value2;
+        int first = Integer.parseInt(request.getParameter("first"));
+        int second = Integer.parseInt(request.getParameter("second"));
+        int answer = first+second;
         response.getWriter().println(answer);
     }
 }
