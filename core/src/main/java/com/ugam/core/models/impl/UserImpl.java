@@ -7,8 +7,7 @@ import com.day.cq.search.QueryBuilder;
 import com.day.cq.search.result.Hit;
 import com.day.cq.search.result.SearchResult;
 import com.ugam.core.models.Users;
-import com.ugam.core.services.ServiceUser;
-import com.ugam.core.services.impl.ServiceUserImpl;
+
 import com.ugam.core.utils.ResolverUtil;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -32,8 +31,6 @@ import java.util.Map;
 public class UserImpl implements Users{
     private static final Logger LOG = LoggerFactory.getLogger(UserImpl.class);
 
-    @OSGiService
-    ServiceUser serviceUser;
     @Inject
     ResourceResolver resolver;
     @Inject
