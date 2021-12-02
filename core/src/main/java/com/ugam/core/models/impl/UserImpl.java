@@ -12,6 +12,7 @@ import com.ugam.core.utils.ResolverUtil;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
@@ -33,15 +34,15 @@ public class UserImpl implements Users{
 
     @Inject
     ResourceResolver resolver;
+    @OSGiService
+    ResourceResolverFactory resourceResolverFactory;
     @Inject
     QueryBuilder queryBuilder;
 
     @Override
     public String getUsernames() {
         LOG.info("\n Log from class!!");
-
         String user="";
-
         List<String> usernames = new ArrayList<>();
         Map<String, String> userMap = new HashMap<>();
         userMap.put("p.hits", "selective");
@@ -51,13 +52,14 @@ public class UserImpl implements Users{
         userMap.put("path", "/home/users");
         userMap.put("type", "rep:User");
         userMap.put("p.properties", "rep:principalName");
-        try {
+        try (ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory)){
             LOG.info("\n Log From Try");
-            Session session = resolver.adaptTo(Session.class);
+            Session session = serviceResourceResolver.adaptTo(Session.class);
             Query userQuery = queryBuilder.createQuery(PredicateGroup.create(userMap), session);
             SearchResult result = userQuery.getResult();
             List<Hit> Hits = result.getHits();
             for (Hit hit : Hits) {
+
                 user = user + "\r\n" + hit.getProperties().get("rep:principalName", String.class);
             }
         } catch (Exception e) {
