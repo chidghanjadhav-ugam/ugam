@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-06-22T17:59:05.819+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/ugam/settings/wcm/templates/custom-xf-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Testimonial Experience Fragment"
+        sling:resourceType="ugam/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ugam/components/container"
+            layout="responsiveGrid">
+            <responsivegrid
+                jcr:created="{Date}2021-06-21T13:09:30.942+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T13:09:30.942+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <titletext
+                    jcr:created="{Date}2021-06-21T17:28:50.603+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-22T17:59:05.731+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugam/components/content/titletext"
+                    bottomPadding="true"
+                    colour="true"
+                    sectionGap="true"
+                    text="It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.&#xd;&#xa;&#xd;&#xa;"
+                    title="Client’s Feedback About Me"/>
+                <testimonialmulti
+                    jcr:created="{Date}2021-06-21T17:29:35.357+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-21T17:30:13.328+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugam/components/content/testimonialmulti">
+                    <testimonialmultifield jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description="Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.&#xd;&#xa;&#xd;&#xa;"
+                            name="Harriet Maxwell"
+                            title="CEO at Google"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description="A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.&#xd;&#xa;&#xd;&#xa;"
+                            name="Carolyn Craig"
+                            title="CEO at Facebook"/>
+                    </testimonialmultifield>
+                </testimonialmulti>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

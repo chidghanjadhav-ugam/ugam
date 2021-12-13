@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-06-22T11:45:20.945+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/ugam/settings/wcm/templates/custom-xf-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Portfolio Experience Fragment"
+        sling:resourceType="ugam/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ugam/components/container"
+            layout="responsiveGrid">
+            <responsivegrid
+                jcr:created="{Date}2021-06-21T13:09:30.942+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T13:09:30.942+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <titletext
+                    jcr:created="{Date}2021-06-21T14:03:03.199+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-21T14:03:55.854+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugam/components/content/titletext"
+                    bottomPadding="true"
+                    sectionGap="true"
+                    text="Who are in extremely love with eco friendly system.&#xd;&#xa;&#xd;&#xa;"
+                    title="Our Latest Featured Projects"/>
+                <portfolioteaser
+                    jcr:created="{Date}2021-06-22T11:43:34.252+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-22T11:44:38.581+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugam/components/content/portfolioteaser"
+                    fileReference="/content/dam/ugam/p1.jpg"
+                    text="vector"
+                    title="2D Vinyl Design">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </portfolioteaser>
+                <portfolioteaser_297272827
+                    jcr:created="{Date}2021-06-22T11:43:54.773+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-22T11:44:54.685+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugam/components/content/portfolioteaser"
+                    fileReference="/content/dam/ugam/p2.jpg"
+                    text="vector"
+                    title="2D Vinyl Design">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </portfolioteaser_297272827>
+                <portfolioteaser_1917450382
+                    jcr:created="{Date}2021-06-22T11:44:06.011+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-22T11:45:20.887+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugam/components/content/portfolioteaser"
+                    fileReference="/content/dam/ugam/p6.jpg"
+                    text="raster"
+                    title="2D Vinyl Design">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </portfolioteaser_1917450382>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
