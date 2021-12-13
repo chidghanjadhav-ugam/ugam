@@ -5,4 +5,10 @@
     jcr:title="Site">
     <header/>
     <footer/>
+    <services-experience-fragment/>
+    <portfolio-experience-fragment/>
+    <price-experience-fragment/>
+    <blog-experience-fragment/>
+    <testimonial-experience-fragment/>
+    <demo-xf/>
 </jcr:root>
