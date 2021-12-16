@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="9532097e-e008-4771-80ec-0344b2c116b6">
+    <jcr:content
+        cq:name="tv-shows"
+        cq:parentPath="/content/dam/ugam/content-fragments/en"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-12-16T01:04:41.506+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="TV Shows"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-12-16T01:04:41.506+05:30">
+        <data
+            cq:model="/conf/ugam/settings/dam/cfm/models/demo-cf-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                noseasons="{Double}3.0"
+                noseasons_x0040_LastModified="{Date}2021-12-16T00:54:39.029+05:30"
+                ottplatform="Netflix"
+                ottplatform_x0040_LastModified="{Date}2021-12-16T00:54:39.028+05:30"
+                releasedate="{Date}2016-07-15T00:00:00.000+05:30"
+                releasedate_x0040_LastModified="{Date}2021-12-16T00:54:39.028+05:30"
+                tvshows="Stranger Things"
+                tvshows_x0040_LastModified="{Date}2021-12-16T00:54:39.027+05:30"/>
+            <demo_cf_variation
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                noseasons="{Long}1"
+                noseasons_x0040_LastModified="{Date}2021-12-16T01:42:10.103+05:30"
+                ottplatform="Disney+ Hotstar"
+                ottplatform_x0040_LastModified="{Date}2021-12-16T01:42:10.102+05:30"
+                releasedate="{Date}2021-06-09T00:00:00.000+05:30"
+                releasedate_x0040_LastModified="{Date}2021-12-16T01:42:10.102+05:30"
+                tvshows="Loki"
+                tvshows_x0040_LastModified="{Date}2021-12-16T01:42:10.101+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <demo_cf_variation
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Demo CF Variation"
+                    name="demo_cf_variation">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[tvshows:269a71bf-32d9-4a57-a1a8-3c4462461bed,ottplatform:269a71bf-32d9-4a57-a1a8-3c4462461bed,releasedate:269a71bf-32d9-4a57-a1a8-3c4462461bed,noseasons:269a71bf-32d9-4a57-a1a8-3c4462461bed]"/>
+                </demo_cf_variation>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
