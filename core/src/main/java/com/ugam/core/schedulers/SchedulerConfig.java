@@ -20,5 +20,5 @@ public @interface SchedulerConfig {
             name = "Cron Expression",
             description = "Cron used by the Scheduler",
             type = AttributeType.STRING)
-    public String cronExpression() default "0 0/1 * 1/1 * ? *";
+    public String cronExpression() default "0 0 12 1/1 * ? *";
 }
