@@ -21,6 +21,8 @@ public class UgamScheduler implements Runnable{
 
     private int schedulerId;
 
+    String path = "/content/ugam/us/en/userlist/jcr:content/root/container/datetime";
+
     @Reference
     private DateProperty dataProperty;
     @Reference
@@ -53,7 +55,7 @@ public class UgamScheduler implements Runnable{
 
     @Override
     public void run() {
-        dataProperty.addDate();
+        dataProperty.addDate(path);
         LOG.info("\nScheduler Running");
     }
 }

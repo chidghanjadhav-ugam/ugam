@@ -21,13 +21,15 @@ public class DatePropertyImpl implements DateProperty {
     @Reference
     ResourceResolverFactory resourceResolverFactory;
 
+   String path = "/content/ugam/us/en/userlist/jcr:content/root/container/datetime";
+
     @Override
-    public void addDate() {
+    public String addDate(String path) {
         try{
             LOG.info("Try Block");
             ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
             Session session = resourceResolver.adaptTo(Session.class);
-            Resource resource = resourceResolver.getResource("/content/ugam/us/en/userlist/jcr:content/root/container/datetime");
+            Resource resource = resourceResolver.getResource(path);
             LOG.info("Before Node");
             Node node = resource.adaptTo(Node.class);
             node.setProperty("date", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
@@ -37,6 +39,6 @@ public class DatePropertyImpl implements DateProperty {
         catch (Exception e){
             LOG.info(e.getMessage());
         }
+        return path;
     }
-
 }

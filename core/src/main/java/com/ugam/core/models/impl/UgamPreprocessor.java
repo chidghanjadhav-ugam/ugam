@@ -28,6 +28,8 @@ public class UgamPreprocessor implements Preprocessor {
     @Reference
     private ResourceResolverFactory resourceResolverFactory;
 
+    String path1 = "/content/ugam/us/en/userlist/jcr:content/root/container/datetime";
+
     @Override
     public void preprocess(ReplicationAction replicationAction, ReplicationOptions replicationOptions) throws ReplicationException {
         LOG.info("\nInside Method");
@@ -40,14 +42,14 @@ public class UgamPreprocessor implements Preprocessor {
             try {
                 ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
                 Session session = resourceResolver.adaptTo(Session.class);
-                Resource resource = resourceResolver.getResource("/content/ugam/us/en/userlist/jcr:content/root/container/datetime");
+                Resource resource = resourceResolver.getResource(dateProperty.addDate(path1));
                 Node node = resource.adaptTo(Node.class);
                 Property date = node.getProperty("date");
                 if(date == DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance()))){
                     LOG.info("\nInside IF");
                 }else{
                     LOG.info("\nInside Else");
-                    dateProperty.addDate();
+                    dateProperty.addDate(path1);
                     session.save();
                     session.logout();
                 }
