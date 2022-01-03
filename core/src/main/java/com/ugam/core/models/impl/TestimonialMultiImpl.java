@@ -18,9 +18,11 @@ import java.util.Map;
 
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = TestimonialMulti.class,
+        resourceType = TimelineImpl.RESOURCE_TYPE,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class TestimonialMultiImpl implements TestimonialMulti{
+    static final String RESOURCE_TYPE = "ugam/components/content/testimonialmulti";
 
     @ChildResource
     Resource testimonialmultifield;

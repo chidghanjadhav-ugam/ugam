@@ -72,8 +72,8 @@ public class HomeAboutImpl implements HomeAbout{
     public String getPath() {
         return path;
     }
-    @JsonProperty(value = "custom property")
-    public String aboutName(){
-        return "Home About";
-    }
+//    @JsonProperty(value = "custom property")
+//    public String aboutName(){
+//        return "Home About";
+//    }
 }

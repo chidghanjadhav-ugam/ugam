@@ -41,7 +41,7 @@ public class UserImpl implements Users{
 
     @Override
     public String getUsernames() {
-        LOG.info("\n Log from class!!");
+        //LOG.info("\n Log from class!!");
         String user="";
         List<String> usernames = new ArrayList<>();
         Map<String, String> userMap = new HashMap<>();
@@ -53,7 +53,7 @@ public class UserImpl implements Users{
         userMap.put("type", "rep:User");
         userMap.put("p.properties", "rep:principalName");
         try (ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory)){
-            LOG.info("\n Log From Try");
+            //LOG.info("\n Log From Try");
             Session session = serviceResourceResolver.adaptTo(Session.class);
             Query userQuery = queryBuilder.createQuery(PredicateGroup.create(userMap), session);
             SearchResult result = userQuery.getResult();
@@ -63,7 +63,7 @@ public class UserImpl implements Users{
                 user = user + "\r\n" + hit.getProperties().get("rep:principalName", String.class);
             }
         } catch (Exception e) {
-            LOG.info("\n ERROR",e.getMessage());
+            //LOG.info("\n ERROR",e.getMessage());
         }
         return user;
     }
