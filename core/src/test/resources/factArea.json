@@ -1,0 +1,9 @@
+{
+  "factareamultifield": {
+    "item": {
+      "jcr:primaryType": "nt:unstructured",
+      "factText": "Projects Completed",
+      "factNumber": "2536"
+    }
+  }
+}

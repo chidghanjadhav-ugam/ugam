@@ -1,0 +1,14 @@
+{
+  "titletext": {
+    "jcr:primaryType": "nt:unstructured",
+    "bottomPadding": "false",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Jun 18 2021 01:05:35 GMT+0530",
+    "text": "At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.",
+    "title": "My Offered Services",
+    "sectionGap": "true",
+    "jcr:lastModified": "Fri Jun 18 2021 13:35:35 GMT+0530",
+    "sling:resourceType": "ugam/components/content/titletext"
+  }
+}
