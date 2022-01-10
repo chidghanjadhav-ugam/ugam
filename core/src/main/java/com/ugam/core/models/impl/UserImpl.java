@@ -30,7 +30,7 @@ import java.util.Map;
         adapters = Users.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class UserImpl implements Users{
-    private static final Logger LOG = LoggerFactory.getLogger(UserImpl.class);
+    //private static final Logger LOG = LoggerFactory.getLogger(UserImpl.class);
 
     @Inject
     ResourceResolver resolver;
