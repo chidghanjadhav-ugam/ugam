@@ -1,0 +1,25 @@
+{
+  "brands": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "imagePath": [
+      "/content/dam/ugam/l1.png",
+      "/content/dam/ugam/l2.png",
+      "/content/dam/ugam/l3.png",
+      "/content/dam/ugam/l4.png",
+      "/content/dam/ugam/l5.png"
+    ],
+    "jcr:created": "Fri Jun 18 2021 01:18:52 GMT+0530",
+    "jcr:lastModified": "Fri Jun 18 2021 13:34:28 GMT+0530",
+    "sling:resourceType": "ugam/components/content/brands"
+  },
+  "nobrands": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Jun 18 2021 01:18:52 GMT+0530",
+    "jcr:lastModified": "Fri Jun 18 2021 13:34:28 GMT+0530",
+    "sling:resourceType": "ugam/components/content/brands"
+  }
+}

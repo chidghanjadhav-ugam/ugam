@@ -33,4 +33,5 @@ public class OSGIConfigModelImpl implements OSGIConfig {
     public String getRunModes() {
         return osgiConfig.getRunModes();
     }
+
 }

@@ -53,8 +53,8 @@ public class TitleTextImpl implements TitleText {
         return bottomPadding;
     }
 
-    @Override
-    public boolean getColour() {
-        return colour;
-    }
+//    @Override
+//    public boolean getColour() {
+//        return colour;
+//    }
 }

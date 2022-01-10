@@ -1,0 +1,12 @@
+{
+  "services": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Jun 18 2021 01:06:10 GMT+0530",
+    "text": "Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.",
+    "title": "Photography",
+    "jcr:lastModified": "Fri Jun 18 2021 01:06:53 GMT+0530",
+    "sling:resourceType": "ugam/components/content/services"
+  }
+}

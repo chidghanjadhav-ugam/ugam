@@ -1,0 +1,14 @@
+{
+  "portfolioteaser": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "fileReference": "/content/dam/ugam/p6.jpg",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Jun 18 2021 01:11:44 GMT+0530",
+    "text": "raster",
+    "title": "2D Vinyl Design",
+    "jcr:lastModified": "Fri Jun 18 2021 01:12:12 GMT+0530",
+    "sling:resourceType": "ugam/components/content/portfolioteaser",
+    "previewReference": "/content/dam/ugam/preview.png"
+  }
+}

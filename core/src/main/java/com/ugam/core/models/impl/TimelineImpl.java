@@ -48,8 +48,8 @@ public class TimelineImpl implements Timeline{
         }
         return timelineAreaMap;
     }
-    @JsonProperty(value = "custom property")
-    public String timeline(){
-        return "Timeline";
-    }
+//    @JsonProperty(value = "custom property")
+//    public String timeline(){
+//        return "Timeline";
+//    }
 }

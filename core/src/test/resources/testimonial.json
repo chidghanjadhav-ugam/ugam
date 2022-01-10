@@ -1,0 +1,13 @@
+{
+  "testimonial": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "description": "Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Jun 18 2021 01:13:39 GMT+0530",
+    "name": "Harriet Maxwell",
+    "title": "CEO at Google",
+    "jcr:lastModified": "Fri Jun 18 2021 01:14:09 GMT+0530",
+    "sling:resourceType": "ugam/components/content/testimonial"
+  }
+}

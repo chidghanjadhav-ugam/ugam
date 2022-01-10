@@ -48,9 +48,9 @@ public class TestimonialImpl implements Testimonial{
         return title;
     }
 
-    @JsonProperty(value = "custom property")
-    public String testimonial(){
-        return "Testimonial";
-    }
+//    @JsonProperty(value = "custom property")
+//    public String testimonial(){
+//        return "Testimonial";
+//    }
 
 }

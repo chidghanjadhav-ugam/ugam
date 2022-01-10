@@ -1,0 +1,13 @@
+{
+  "blogteaser": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "description": "So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Fri Jun 18 2021 01:18:06 GMT+0530",
+    "image": "/content/dam/ugam/b3.jpg",
+    "title": "Do Dreams Serve As A Premonition",
+    "jcr:lastModified": "Fri Jun 18 2021 01:18:32 GMT+0530",
+    "sling:resourceType": "ugam/components/content/blogteaser"
+  }
+}
