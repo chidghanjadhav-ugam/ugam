@@ -1,7 +1,6 @@
 package com.ugam.core.models.impl;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugam.core.models.Testimonial;
 import org.apache.sling.api.resource.Resource;
@@ -47,10 +46,5 @@ public class TestimonialImpl implements Testimonial{
     public String getTitle() {
         return title;
     }
-
-//    @JsonProperty(value = "custom property")
-//    public String testimonial(){
-//        return "Testimonial";
-//    }
 
 }

@@ -1,7 +1,6 @@
 package com.ugam.core.models.impl;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugam.core.models.HomeAbout;
 import org.apache.sling.api.resource.Resource;
@@ -72,8 +71,5 @@ public class HomeAboutImpl implements HomeAbout{
     public String getPath() {
         return path;
     }
-//    @JsonProperty(value = "custom property")
-//    public String aboutName(){
-//        return "Home About";
-//    }
+
 }

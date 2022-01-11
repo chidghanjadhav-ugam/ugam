@@ -12,12 +12,11 @@ public class ResolverUtil {
     private ResolverUtil() {
     }
 
-    public static final String service_user = "serviceuser";
+    public static final String SERVICE_USER = "serviceuser";
 
     public static ResourceResolver newResolver(ResourceResolverFactory resourceResolverFactory) throws LoginException {
-        final Map<String, Object> paramMap = new HashMap<String, Object>();
-        paramMap.put(ResourceResolverFactory.SUBSERVICE, service_user);
-        ResourceResolver resolver = resourceResolverFactory.getServiceResourceResolver(paramMap);
-        return resolver;
+        final Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put(ResourceResolverFactory.SUBSERVICE, SERVICE_USER);
+        return resourceResolverFactory.getServiceResourceResolver(paramMap);
     }
 }

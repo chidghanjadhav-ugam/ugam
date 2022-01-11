@@ -2,7 +2,6 @@ package com.ugam.core.models.impl;
 
 import com.ugam.core.models.OSGIConfig;
 
-import com.ugam.core.models.OSGIConfig;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.metatype.annotations.*;

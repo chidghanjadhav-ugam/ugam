@@ -1,13 +1,10 @@
 package com.ugam.core.models.impl;
 
 
-import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugam.core.models.TestimonialMulti;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
-import org.apache.sling.models.annotations.Exporter;
-import org.apache.sling.models.annotations.ExporterOption;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 
