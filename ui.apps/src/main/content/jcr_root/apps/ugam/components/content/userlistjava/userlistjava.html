@@ -1,0 +1,13 @@
+<sly class="container bg-white" data-sly-use.userlist="com.ugam.core.models.UserListAPI"></sly>
+<h4>User List Using Java</h4>
+	<p hidden>${userlist.apiUrl}</p>
+	<div class="list-container" data-sly-list.items=${userlist.data}>
+		<div class="card-container">
+			<img src="${items.image}"/>
+		<div>
+			<span>${items.firstname}</span>
+			<span>${items.lastname}</span>
+		</div>
+		<p style="text-align: center;">${items.email}</p>
+	</div>
+</div>
