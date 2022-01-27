@@ -22,7 +22,7 @@ public class BrandsImpl implements Brands{
     @Override
     public List<String> getImagePath() {
         if(imagePath!=null){
-            return new ArrayList<String>(imagePath);
+            return new ArrayList<>(imagePath);
         }
         else {
             return Collections.emptyList();

@@ -5,5 +5,4 @@ public interface TitleText {
     String getText();
     boolean getSectionGap();
     boolean getBottomPadding();
-    //boolean getColour();
 }

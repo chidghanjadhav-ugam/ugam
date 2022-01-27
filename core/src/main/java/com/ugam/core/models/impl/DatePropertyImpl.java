@@ -3,7 +3,6 @@ package com.ugam.core.models.impl;
 
 import com.day.cq.commons.date.DateUtil;
 import com.ugam.core.models.DateProperty;
-import com.ugam.core.schedulers.UgamScheduler;
 import com.ugam.core.utils.ResolverUtil;
 import org.apache.sling.api.resource.*;
 import org.osgi.service.component.annotations.Component;

@@ -2,12 +2,9 @@ package com.ugam.core.models.impl;
 
 
 import com.ugam.core.models.TitleText;
-import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import javax.inject.Inject;
 
@@ -53,8 +50,4 @@ public class TitleTextImpl implements TitleText {
         return bottomPadding;
     }
 
-//    @Override
-//    public boolean getColour() {
-//        return colour;
-//    }
 }

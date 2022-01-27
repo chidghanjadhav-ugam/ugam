@@ -2,9 +2,7 @@ package com.ugam.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.ugam.core.models.Testimonial;
 import com.ugam.core.models.Timeline;
-import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
@@ -48,8 +46,5 @@ public class TimelineImpl implements Timeline{
         }
         return timelineAreaMap;
     }
-//    @JsonProperty(value = "custom property")
-//    public String timeline(){
-//        return "Timeline";
-//    }
+
 }

@@ -103,12 +103,10 @@ public class DynamicDataSourceServlet extends SlingSafeMethodsServlet {
 
         private Resource getJsonResource(ResourceResolver resourceResolver, String dropdownSelector) {
                 Resource jsonResource;
-                switch (dropdownSelector) {
-                        case COUNTRY_LIST:
-                                jsonResource = resourceResolver.getResource(COUNTRY_LIST_PATH);
-                                break;
-                        default:
-                                throw new IllegalStateException("Unexpected value: " + dropdownSelector);
+                if (COUNTRY_LIST.equals(dropdownSelector)) {
+                        jsonResource = resourceResolver.getResource(COUNTRY_LIST_PATH);
+                } else {
+                        throw new IllegalStateException("Unexpected value: " + dropdownSelector);
                 }
                 return jsonResource;
         }
