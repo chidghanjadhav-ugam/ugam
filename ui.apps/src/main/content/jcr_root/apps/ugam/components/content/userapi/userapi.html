@@ -1,0 +1,11 @@
+<sly data-sly-use.singleuser="com.ugam.core.models.FetchAPI"></sly>
+<h4>Single User</h4>
+<p hidden id="demo">${singleuser.message}</p>
+<div class="card-container">
+  <img src="${singleuser.image}"/>
+    <div>
+        <p>${singleuser.firstName}</p>
+        <p>${singleuser.lastName}</p>
+        <p>${singleuser.email}</p>
+	</div>
+</div>
